@@ -1,0 +1,90 @@
+/*--Font declarion ------------------------------------------------*/
+/*Font declartion - Fanciest (headers)*/
+@font-face{
+  font-family: "TanNimbus";
+  src: url(TAN-NIMBUS.ttf);
+  font-style: normal;
+  color:#2d3252;
+}
+/*Font declartion - Simple (Heading)*/
+@font-face {
+  font-family: "Inter-Heading";
+  src: url(Inter-Medium.ttf);
+  font-style: normal;
+}
+/*Font declartion - Simple (Text)*/
+@font-face{
+  font-family: "Inter-Light";
+  src: url(Inter-ExtraLight.ttf);
+  font-style: normal;
+}
+/*------------------------------------------------------------------*/
+
+body{
+  background-color: #2D3252;
+  margin: 0;
+}
+
+.Webpage {
+  padding: 16px;
+  font-family: Inter-Light;
+  color:#e67008;
+}
+
+img{
+ width: 100px;
+ height: 75px;
+ object-fit: contain;
+ margin:10px;
+  /*width: 286; Height: 220*/
+}
+
+/*--Header----------------------------------------------------------------------------*/
+.header{
+  display: block;
+  border-bottom: solid;
+  border-color: #e67008
+  padding: 10px 16px;
+  background-color: #FFFAEB;
+  color:#2d3252;
+  height: 100px; 
+}
+
+.NavLi-fifth{ /*Navigation list*/
+  display: inline;/*emove the line breaks before and after each list item*/
+  float: inline-start;/*Places list items next to each other*/
+}
+
+#MainHeader-txt{
+  font-family: TanNimbus;
+  font-size: 20px;
+  padding-right:  250px;
+}
+
+/*Adding a large border between main heading & Smaller heading*/
+#CarmerganHeader, #FounderHeader, #ContactHeader{
+  margin-top: 15px;
+  font-family: "TanNimbus";
+  font-size: 105%;
+}
+#CarmerganHeader{
+  padding-right: 50px;
+}
+#FounderHeader{
+  padding-right: 50px;
+  padding-left: 100px;
+}
+#ContactHeader{
+  padding-left:100px;
+}
+/*--Scrolling header--------------------------------------------------------------------*/
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.Sticky {
+  position: fixed;
+  top: 10;
+  width: 100%
+}
+
+.Sticky + .Webpage {
+  padding-top: 102px;
+}
